@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown timer</title>
+<script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+<body>
+
+    <div class="clock" id="clock">
+
+        <div class="clock__item">
+            <p class="clock__info">Days</p>
+            <span class="clock__time" id="days">00</span>
+        </div>
+
+        <div class="clock__dots">:</div>
+
+        <div class="clock__item">
+            <p class="clock__info">Hours</p>
+            <span class="clock__time" id="hours">00</span>
+        </div>
+
+        <div class="clock__dots">:</div>
+
+        <div class="clock__item">
+            <p class="clock__info">Minutes</p>
+            <span class="clock__time" id="minutes">00</span>
+        </div>
+        
+        <div class="clock__dots">:</div>
+
+        <div class="clock__item">
+            <p class="clock__info">Seconds</p>
+            <span class="clock__time" id="seconds">00</span>
+        </div>
+
+    </div>
+
+    <form class="deadline-form" id="date-form">
+        <input class="deadline-form__input" type="date" name="date" id="newDate" required>
+        <button class="deadline-form__submit-btn" id="submit" type="submit">Set Deadline</button>
+    </form>
+
+</body>
+</html>
